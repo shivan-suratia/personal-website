@@ -311,7 +311,7 @@ nav ul li a:hover::after{
 
     .tab-links{
         font-size: 20px;
-        margin-right: 30px;;
+        margin-right: 30px;
     }
 
     .sub-title{
@@ -321,7 +321,14 @@ nav ul li a:hover::after{
         margin-bottom: 8px;
     }
 
-
-
+    .about-title {
+        font-family: 'Arial';
+      }
+    .portfolio-title {
+        font-family: 'Arial';
+      }
+    .contact-title {
+        font-family: 'Arial';
+    }
 
 }
