@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shivan.info</title>
+    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!---------------about------------------>
+    <div id="about">
+        <div class = "container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/Headshot.jpg" class="profile-picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title about-title">About Me</h1>
+                    <p class = about-p>Hi! I'm a senior at Rutgers finishing up a double major in Computer Science and BAIT (Business Analytics & Information Technology). Previously, I have interned in data analytics and product-related roles, building upon my diverse technical skillset gained from university. I am currently interested in software development, product management, and UI/UX design.
+                    </p>
+                    <div class="tab-titles" id="titles-tab">
+                        <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Python, SQL, JavaScript, HTML, CSS</li>
+                            <li><span>UI/UX</span><br>Figma</li>
+                            <li><span>Project Management</span><br>Agile Methodolgies, Scrum, Jira, Confluence</li>
+                            <li><span>Databases</span><br>Oracle, MySQL, Access</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MarketAxess</span><br>Product Owner Intern<br><small><i>Summer 2022</i></small></li>
+                            <li><span>New Jersey Department of Labor</span><br>Research & Analytics Intern<br><small><i>Summer 2021</i></small></li><li></li><li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Rutgers University—New Brunswick</span><br>BA Computer Science<br>BS Business Analytics Information Technology<br>3.7 GPA<br><small><i>Class of 2023</i></small></li>
+                            <li><span>Monroe Township High School</span><br><small><i>Class of 2019</i></small></li><li></li><li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <div id="pcol1">
+            <h1 class = "sub-title portfolio-title">Porfolio</h1> 
+        </div>
+    </div>
+</div>
+<div id="portfolio-content">
+    <div class="container">
+        <div class="work-list">
+            <div>
+                <h2>GroupMe Case Study</h2>
+                <p>&nbsp</p>
+                <p>Conducted a UI/UX case study and implemented improvements to the GroupMe app. Built complete wireframe and prototype using Figma.</p>
+                <p>&nbsp</p>
+                <a class = "portfolio-link" href="https://www.figma.com/proto/v4NXQgbN6qb46RVBDpQkDy/Case-Study-Presentation-Template-(Community)-(Copy)?node-id=909%3A355&starting-point-node-id=909%3A355" target="_blank" >learn more</a>
+            </div>
+            <div>
+                <h2>Housing Price Machine Learning</h2>
+                <p>&nbsp</p>
+                <p>This program takes 2 text files of matrices containing housing attributes. Linear regression is done to make predictions on housing prices from the test data set.</p>
+                <p>&nbsp</p>
+                <a class = "portfolio-link" href="https://github.com/shivan-suratia/housing-price-modeling" target="_blank" >learn more</a>
+            </div>
+            <div>
+                <h2>Census Data Machine Learning</h2>
+                <p>&nbsp</p>
+                <p>This project uses a linear estimator machine learning model to predict individual incomes based on their demographics.</p>
+                <p>&nbsp</p>
+                <a class = "portfolio-link" href="https://github.com/shivan-suratia/census-data" target="_blank" >learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------contact-------------------->
+<div id ="contact">
+    <div class="contact-container">
+        <div class = "contact-row">
+            <div id = "contact-col-1">
+                <h1 class = "sub-title contact-title">Contact</h1>
+                <a class = contact-link href="mailto:shivan.suratia2@gmail.com" target="_blank" >shivan.suratia2@gmail.com</a><p></p>
+                <a class = contact-link href="https://www.linkedin.com/in/shivansuratia/" target="_blank" >LinkedIn</a><p></p>
+                <a class = contact-link href="https://github.com/shivan-suratia" target="_blank" >GitHub</a>
+            </div>
+            <div id = "contact-col-2">
+
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<center><small><i>Shivan Suratia</i></small></center>
+
+
+<section id="about"></section>
+<section id="portfolio"></section>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        document.getElementsByClassName("tab-links")
+        [0].classList.add("active-link");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        document.getElementById("about-button").addEventListener("click", function() {
+        document.getElementById("about").scrollIntoView({behavior: "smooth"});
+        });
+        document.getElementById("portfolio-button").addEventListener("click", function() {
+        document.getElementById("portfolio").scrollIntoView({behavior: "smooth"});
+        });
+
+    </script>
+
+
+</body>
+</html>
