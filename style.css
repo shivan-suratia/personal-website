@@ -242,9 +242,7 @@ nav ul li a:hover::after{
         box-sizing: border-box;
         
     }
-    .container{
-        width: 100%;
-    }
+
     #header{
         width: 100%;
         position: relative;
@@ -323,18 +321,14 @@ nav ul li a:hover::after{
         margin-bottom: 8px;
     }
 
-    
-  .portfolio-title {
-    font-family: 'Arial Bold';
-  }
-
-  .about-title {
-    font-family: 'Arial Bold';
-  }
-
-  .contact-title {
-    font-family: 'Arial Bold';
-  }
-
+    .about-title {
+        font-family: 'Arial';
+      }
+    .portfolio-title {
+        font-family: 'Arial';
+      }
+    .contact-title {
+        font-family: 'Arial';
+    }
 
 }
